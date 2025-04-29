@@ -21,7 +21,7 @@ function App() {
     <Route path="/SideBar" element={<SideBar />} />
     <Route path="/ChatBox" element={<ChatBox />} />
     <Route path="/Profile" element={<Profile />} />
-    <Route path="/mainChat" element={<MainChat />} />
+    <Route path="/MainChat" element={<MainChat />} />
     <Route path="/MainProfile" element={<MainProfile />} />
   </Routes>
   </>

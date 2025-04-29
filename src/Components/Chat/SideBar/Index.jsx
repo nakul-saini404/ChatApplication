@@ -51,7 +51,7 @@ const SideBar = () => {
               <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" onClick={() => navigate("/MainProfile")}/>
             </ListItemAvatar>
             <ListItemText
-            onClick={() => navigate("/mainChat")}
+            onClick={() => navigate("/MainChat")}
               primary="KP Saini"
               secondary={
                 <Typography variant="caption">FrontEnd Developer</Typography>

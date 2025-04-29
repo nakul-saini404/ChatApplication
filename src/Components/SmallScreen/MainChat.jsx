@@ -35,7 +35,7 @@ const MainChat = () => {
     <div>
          <Paper square elevation={0} sx={{ display:"flex"}}>
          <Box sx={{width:"100%"
-    ,flexDirection:"column",height:"100vh", display:{xs:"none", md:"flex"}}}>
+    ,flexDirection:"column",height:"100vh", display:"flex"}}>
       <Box>
       <Card sx={{ borderRadius: "0" }} elevation={0}>
       <CardHeader
@@ -43,7 +43,7 @@ const MainChat = () => {
             <>
               {" "}
               <Button sx={{minWidth:"auto", mr:2}}>
-                <ArrowBackIcon onClick={() => navigate("/SideBar")} />
+                <ArrowBackIcon onClick={() => navigate("/app")} />
               </Button>
               <Avatar>R</Avatar>
             </>
