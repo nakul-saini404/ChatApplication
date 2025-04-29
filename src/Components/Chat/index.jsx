@@ -9,7 +9,7 @@ const Chat = () => {
     <>
     <Paper square elevation={0} sx={{ display:"flex"}}>
         <SideBar/>
-        <ChatBox/> 
+        <ChatBox /> 
         <Profile/>
     </Paper>
     

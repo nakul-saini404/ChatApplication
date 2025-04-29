@@ -10,14 +10,17 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
+import { useNavigate } from "react-router-dom";
+
 const SideBar = () => {
+  const navigate = useNavigate();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   return (
-    <Box sx={{width:"25vw",display:"flex", flexDirection:"column", height:"100vh"}}>
+    <Box sx={{width:{xs:"100vw",sm:"100vw",md:"25vw"},display:"flex", flexDirection:"column", height:"100vh"}}>
       <Header />
       <Tabs
         value={value}
@@ -32,10 +35,11 @@ const SideBar = () => {
         <List sx={{p:0, overflowY:"auto",flex:"1 0 0"}}>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" onClick={() => navigate("/MainProfile")}/>
             </ListItemAvatar>
             <ListItemText
-              primary="Nakul Saini"
+            onClick={() => navigate("/mainChat")}
+              primary="KP Saini"
               secondary={
                 <Typography variant="caption">FrontEnd Developer</Typography>
               }
@@ -44,10 +48,11 @@ const SideBar = () => {
           <Divider component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" onClick={() => navigate("/MainProfile")}/>
             </ListItemAvatar>
             <ListItemText
-              primary="Nakul Saini"
+            onClick={() => navigate("/mainChat")}
+              primary="KP Saini"
               secondary={
                 <Typography variant="caption">FrontEnd Developer</Typography>
               }
@@ -56,10 +61,11 @@ const SideBar = () => {
           <Divider component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" onClick={() => navigate("/MainProfile")}/>
             </ListItemAvatar>
             <ListItemText
-              primary="Nakul Saini"
+            onClick={() => navigate("/mainChat")}
+              primary="KP Saini"
               secondary={
                 <Typography variant="caption">FrontEnd Developer</Typography>
               }
@@ -68,10 +74,11 @@ const SideBar = () => {
           <Divider component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" onClick={() => navigate("/MainProfile")}/>
             </ListItemAvatar>
             <ListItemText
-              primary="Nakul Saini"
+            onClick={() => navigate("/mainChat")}
+              primary="KP Saini"
               secondary={
                 <Typography variant="caption">FrontEnd Developer</Typography>
               }
@@ -80,10 +87,11 @@ const SideBar = () => {
           <Divider component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" onClick={() => navigate("/MainProfile")}/>
             </ListItemAvatar>
             <ListItemText
-              primary="Nakul Saini"
+            onClick={() => navigate("/mainChat")}
+              primary="KP Saini"
               secondary={
                 <Typography variant="caption">FrontEnd Developer</Typography>
               }
@@ -92,10 +100,11 @@ const SideBar = () => {
           <Divider component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" onClick={() => navigate("/MainProfile")}/>
             </ListItemAvatar>
             <ListItemText
-              primary="Nakul Saini"
+            onClick={() => navigate("/mainChat")}
+              primary="KP Saini"
               secondary={
                 <Typography variant="caption">FrontEnd Developer</Typography>
               }
@@ -104,52 +113,18 @@ const SideBar = () => {
           <Divider component="li" />
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" onClick={() => navigate("/MainProfile")}/>
             </ListItemAvatar>
             <ListItemText
-              primary="Nakul Saini"
+            onClick={() => navigate("/mainChat")}
+              primary="KP Saini"
               secondary={
                 <Typography variant="caption">FrontEnd Developer</Typography>
               }
             />
           </ListItem>
           <Divider component="li" />
-          <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-        </ListItemAvatar>
-        <ListItemText
-          primary="Nakul Saini"
-          secondary={
-          
-              <Typography
-                variant="caption"
-              >
-               FrontEnd Developer
-              </Typography>
-          }
-        />
-      </ListItem>
-      <Divider component="li" />
- 
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-        </ListItemAvatar>
-        <ListItemText
-          primary="Nakul Saini"
-          secondary={
-          
-              <Typography
-                variant="caption"
-              >
-               FrontEnd Developer
-              </Typography>
-          }
-        />
-      </ListItem>
-      <Divider component="li" />
- 
+        
         </List>
       )}
       {value === 1 && <div>1</div>}

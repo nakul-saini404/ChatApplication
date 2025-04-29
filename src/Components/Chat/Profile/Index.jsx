@@ -4,7 +4,7 @@ import profile from "../../../assets/images/profile.jpg"
 
 const Profile = () => {
   return (
-    <Box sx={{bgcolor:"#ccc", width:"25vw" , display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column"}}>
+    <Box sx={{bgcolor:"#ccc", width:"25vw", display:{xs:"none",sm:"none", md:"flex"},height:{xs:"100%",md:"auto"}, alignItems:"center", justifyContent:"center", flexDirection:"column"}}>
       <Avatar src={profile} sx={{width:"200px", height:"200px"}}/>
       <Typography variant='h4' sx={{textTransform:"uppercase" ,color:"primary.light"}}>Nakul Saini</Typography>
       <Typography variant='subtitle1'>UI FrontEnd Developer</Typography>
