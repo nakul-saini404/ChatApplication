@@ -6,8 +6,10 @@ import Profile from './Profile/Index.jsx'
 import socket from './socket.js'
 
 const Chat = () => {
-  useEffect(()=>{
-    console.log(socket);
+  useEffect(() => {
+    // socket.on('connect', () => {
+      console.log(socket);
+    // });
   },[socket])
   return (
     <>
